@@ -44,6 +44,8 @@ services:
       - "3000:3000"
     networks:
       - app-network
+    stdin_open: true
+   
 
 networks:
     app-network:
@@ -54,3 +56,4 @@ volumes:
     node_modules:
     web-root:
       driver: local
+

@@ -9,7 +9,7 @@ const PORT = 8080;
 require('./src/database');
 
 app.get('/', (req, res) => {
-    res.send("Hello World ! ");
+    res.send("Hello World with hot reloading! ");
 });
 
 app.listen(PORT, function () {
